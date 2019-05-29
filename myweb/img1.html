@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script language="javascript">
+function closeContent(x){
+x.parentNode.style.disp="none";
+document.getElementById("content").style.display="none";
+function openContent(x){
+document.getElementById("content").style.display="block";
+document.getElementById("content_p").style.display="block";
+document.getElementById("content_p").geElementsByTagName("img")[0].src=
+document.geElementsByTagName("img")[x].alt;}
+</script>
+<style>
+*{margin:0px;padding:0px;}
+#contain,#foot
+{width:800px;margin:0px auto;padding:0px;
+}
+#d{}
+#banner
+{	height:85px;color:#356A6A;
+	background:url(images/banner.jpg) #f4fdf5;}
+#banner h5
+{font-size:18px;padding-left:100px;padding-top:15px;
+ font-weight:bold;font-family:"幼圆";}	
+#banner p
+{font-size:18px;padding-left:150px;padding-top:15px;
+ font-weight:bold;font-family:"幼圆";}	
+#nav
+{height:35px;
+ background:url(images/nav2.jpg) #d4ecdc repeat-x;
+ font-size:14px;  padding-left:75px; margin-bottom:1px; margin-top:1px;
+ }
+#nav ul{list-style:none;}
+#nav ul li{float:left;
+           margin:0px auto;
+          }
+#nav ul li a
+  {display:block;text-align:
+   center;float:left; width:100px;height:25px; 
+   letter-spacing:1em;
+   color:#356A6A;
+   text-decoration:none;
+   text-align:center;
+   font-weight:bold;
+   padding:10px 0px 0px 0px;  
+   }
+#aa{padding-top:8px;}   
+#nav ul li a:link,#nav ul li a:viseted,#nav ul li a:hover
+ {
+  text-decoration:none;
+  font-weight:bold;
+  color:#66CCFF;
+  text-decoration:underline;
+  background:url(images/nav3.jpg) repeat-x;
+ }
+ #top
+{
+	height:18px;
+	background-color: #000000;
+	text-align:right;
+	font-size:12px;
+	color:#FFFFFF;
+	padding-right:15px;
+}
+#top a:hover
+{font-weight: bold;}
+#top a,#top a:viseted,#top a:hover
+{ color:#FFFFFF;text-decoration:none;padding-left:10px;padding-right:10px;}
+#d1{margin:0px auto;}
+#main{ width:800px; height:550px; border:1px solid #BADCDC; margin-top:10px;
+float:left;}
+#main h4{ width:450px; height:50px; background:url(images/rz-bg2.jpg) no-repeat;
+          padding-top:15px; padding-left:150px;
+		  margin-top:10px; margin-left:10px;}
+#main h5{ padding-left:20px;font-size:15px; text-align:center;}
+#main table td{ text-align:center;}
+#main a{color:#333;}
+#main a:visited{color:#333;}
+#main a:hover{ color:#d9d7cb;}
+
+/*#main h6{padding-left:20px; font-style:italic;font-size:12px;}
+#main p{border:1px solid #BADCDC;
+         font-size:14px;
+		 text-indent:2em;
+		 line-height:1.5em;
+		 height:55px;
+		 width:745px;
+	
+         overflow:hidden;
+	     text-overflow:ellipsis;
+		 margin-left:20px;
+		 padding-left:10px;
+		 } 	*/	   
+#main hr{border:1px dashed #BADCDC;
+           margin-top:10px;
+		   }
+#main img{ border:1px solid #ccc;}		   
+#foot{height:50px;
+	  background-color: #000000;color: #FFFFFF;
+	  text-align:center;
+	  padding-top:10px;
+	  margin-top:10px;}
+#content{ position:absolute; top:0px; left:0px; 
+display:none; 
+width:100%; height:100%; background:#999999; 
+text-align:center; 
+filter:alpha(opacity=85);}
+#content_p{ position:absolute; text-align:center;top:190px; left:0px; 
+display:none; 
+width:100%; height:350px;}	
+#content_btn{ width:100px; height:18px; margin-top:10px; border:1px solid #999;}  
+</style>
+</head>
+</html>
+<body>
+<div  id="contain">
+<div id="d">
+  <div id="top">
+  <a href="#" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.summerccit.com');">设为首页</a>|
+  <a href="javascript:window.external.AddFavorite('http://www.summerccit.com','晶晶首页')">加入收藏夹</a>|
+  <a href="mailto:summerccit@163.com" title="联系我们">联系站长</a>
+  </div>
+ <div id="banner">
+  <h5>成功没有早晚</h5>
+  <p>努力就有收获</p>
+</div> 
+<div id="nav">
+  <ul>
+  <li><a href="index.html">首页</a></li>
+  <li id="aa">|</li>
+  <li><a  href="rizhi.html">日志</a></li>
+  <li id="aa">|</li>
+  <li><a href="#">相册</a></li>
+  <li id="aa">|</li>
+  <li><a href="liuyan.html">留言</a></li>
+  <li id="aa">|</li>
+  <li><a href="me.html">关于我</a></li>
+    <li id="aa">|</li>
+  <li><a href="flash.html">FL简历</a></li>
+  </ul>
+</div> 
+  
+  <div id="main">
+  <h4>日志分类</h4>
+  <table width="750" border="0" align="center" cellpadding="0" cellspacing="20">
+  <tr>
+    <td width="218"><h5><a href="javascript:openContent(0);" title="单击显示大图">森林美景</a></h5></td>
+    <td width="226"><h5><a href="javascript:openContent(1);" title="单击显示大图">地球美景</a></h5></td>
+    <td width="226"><h5><a href="javascript:openContent(2);" title="单击显示大图">世界遗产</a></h5></td>
+  </tr>
+  <tr>
+    <td><a href="javascript:openContent(0);" title="单击显示大图"><img src="images/1-1.jpg" title="单击显示大图" alt="images/1.jpg" /></a></td>
+    <td><a href="javascript:openContent(1);" title="单击显示大图"><img src="images/2-1.jpg" title="单击显示大图" alt="images/2.jpg"/>
+</a></td>
+    <td><a href="javascript:openContent(2);" title="单击显示大图"><img src="images/3-1.jpg" title="单击显示大图" alt="images/3.jpg"/>
+</a></td>
+  </tr>
+    <tr>
+    <td width="218"><h5><a href="javascript:openContent(3);" title="单击显示大图">森林美景</a></h5></td>
+    <td width="226"><h5><a href="javascript:openContent(4);" title="单击显示大图">地球美景</a></h5></td>
+    <td width="226"><h5><a href="javascript:openContent(5);" title="单击显示大图">世界遗产</a></h5></td>
+  </tr>
+  <tr>
+    <td><a href="javascript:openContent(3);" title="单击显示大图"><img src="images/1-1.jpg" title="单击显示大图" alt="images/1.jpg" /></a></td>
+    <td><a href="javascript:openContent(4);" title="单击显示大图"><img src="images/2-1.jpg" title="单击显示大图" alt="images/2.jpg"/>
+</a></td>
+    <td><a href="javascript:openContent(5);" title="单击显示大图"><img src="images/3-1.jpg" title="单击显示大图" alt="images/3.jpg"/>
+</a></td>
+  </tr>
+    <tr>
+    <td width="218"><h5><a href="javascript:openContent(6);" title="单击显示大图">森林美景</a></h5></td>
+    <td width="226"><h5><a href="javascript:openContent(7);" title="单击显示大图">地球美景</a></h5></td>
+    <td width="226"><h5><a href="javascript:openContent(8);" title="单击显示大图">世界遗产</a></h5></td>
+  </tr>
+  <tr>
+    <td><a href="javascript:openContent(6);" title="单击显示大图"><img src="images/1-1.jpg" title="单击显示大图" alt="images/1.jpg" /></a></td>
+    <td><a href="javascript:openContent(7);" title="单击显示大图"><img src="images/2-1.jpg" title="单击显示大图" alt="images/2.jpg"/>
+</a></td>
+    <td><a href="javascript:openContent(8);" title="单击显示大图"><img src="images/3-1.jpg" title="单击显示大图" alt="images/3.jpg"/>
+</a></td>
+  </tr>
+</table>
+
+</div>
+  <div id="foot">版权归F12班黄晶晶同学所有<br />2009年10月15日</div>
+
+  <div id="content"></div>
+  <p id="content_p">
+  <img src="" id="img_dis" /></br>
+  <button onclick="closeContent(this);" id="content_btn">关闭窗口</button>
+  </p>
+</body>
+</html>

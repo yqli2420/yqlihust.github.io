@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript">
+var Set=function(){
+   var menu= document.getElementById("one").getElementsByTagName
+
+("li");
+   for(i=0;i<menu.length;i++){
+        if(menu[i].className=="li_a"){
+	        menu[i].onmouseover=function(){
+	            this.getElementsByTagName("ul")
+
+[0].style.display="block";
+				this.getElementsByTagName("ul")
+
+[0].style.width="80px";
+				this.getElementsByTagName("ul")
+
+[0].style.height="100px";
+				this.getElementsByTagName("ul")
+
+[0].style.position="absolute";
+                }
+			menu[i].onmouseout=function(){
+	            this.getElementsByTagName("ul")
+
+[0].style.display="none";
+                }
+        }
+   }
+ }
+ window.onload=Set; </script>
+<style>
+*{margin:0px;padding:0px;}
+#contain,#foot
+{width:790px;margin:0px auto;padding:0px;
+}
+#banner
+{	height:85px;color:#356A6A;
+	background:url(images/banner.jpg) #f4fdf5;}
+#banner h5
+{font-size:18px;padding-left:100px;padding-top:15px;
+ font-weight:bold;font-family:"幼圆";}	
+#banner p
+{font-size:18px;padding-left:150px;padding-top:15px;
+ font-weight:bold;font-family:"幼圆";}	
+#aa{padding-top:8px;}   
+#top
+{	height:20px;
+	background:url(images/top.jpg) no-repeat;	
+	text-align:right;
+	font-size:12px;
+	color:#46008C;
+	padding-right:15px;
+}
+#top a:hover
+{font-weight: bold; background:url(images/abg.gif) no-repeat;}
+#top a,#top a:viseted,#top a:hover
+{ color:#46008C;text-decoration:none;padding-left:10px;padding-right:10px;}
+#d1{margin:0px auto;}
+#main{ width:790px;border:1px solid #BADCDC; margin-top:10px;}
+#main h4{ width:450px; height:50px; background:url(images/me-bg.jpg) no-repeat;
+          padding-top:15px; padding-left:150px;
+		  margin-top:10px; margin-left:10px;}  
+#main h5{ padding-left:20px;font-size:15px;}
+#main h5 a{ font-style:italic; font-size:12px; color:#993300;}
+#main h6{padding-left:20px; font-style:italic;font-size:12px;}
+#main p{border:1px solid #BADCDC;
+         font-size:12px;
+		 text-indent:2em;
+		 line-height:1.5em;
+		  width:730px;
+		  
+		 margin-left:20px;
+		 padding-left:10px;
+		 padding-top:10px;
+		 padding-right:10px;
+		  /*white-space:nowrap;
+         overflow:hidden;
+	     text-overflow:ellipsis;*/} 		   
+#main hr{border:1px dashed #BADCDC;
+           margin-top:10px;
+		   }
+#foot{height:50px;
+	   background:url(images/top.jpg) no-repeat;
+	 background-color: #000000;color:#FFFFFF;
+	  text-align:center;
+	  padding-top:26px;
+	  margin-top:5px;}	  
+#nav{ background:url(images/nav2.jpg) repeat-x; height:35px;}
+ul{list-style:none;}
+#one{      width:750px;
+	  margin:0px auto;
+	  line-height:24px;	  
+	}
+
+#one a{display:block;
+       width:80px;
+	   text-align:center;
+	   background:url(images/nav22.jpg); padding-top:10px; 
+letter-spacing:5px;
+      }	
+a{text-decoration:none; color:#6B9C8A; font-family:"幼圆";}	  
+a:link{text-decoration:none; color:#000000;font-weight:bold;}	  
+a:visited{text-decoration:none;font-weight:bold;}
+a:hover{text-decoration:none;
+        font-weight:bold;
+		background:#000000;
+		color:#fff;  
+       } 
+#one{font-size:12px;}	   
+#one li{float:left; width:100px;
+       }
+#one li ul{line-height:27px;display:none;}
+#one li ul li{float:left; width:80px;background:#eee;}	   
+#one li ul li a
+     {display:block;
+	  width:80px;
+	  text-align:left;
+	  padding-left:20px;	  
+	 } 
+.li_a{dispay:block;}	  
+</style>
+</head>
+</html>
+<body>
+<div  id="contain">
+<div id="d">
+  <div id="top">
+  <a href="#" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.summerccit.com');">设为首页</a>|
+  <a href="javascript:window.external.AddFavorite('http://www.summerccit.com','晶晶首页')">加入收藏夹</a>|
+  <a href="mailto:summerccit@163.com" title="联系我们">联系站长</a>
+  </div>
+ <div id="banner">
+  <h5>成功没有早晚</h5>
+  <p>努力就有收获</p>
+</div> 
+<div id="nav">
+  <ul id="one">
+  <li class="li_a"><a href="index.html">首 页</a>
+  <ul>
+<li><a href="index.html">网站介绍</a></li>
+<li><a href="#">关于我们</a></li>
+<li><a href="#">联系我们</a></li>
+<li><a href="rizhi.html"最新日志></a></li>
+</ul>
+  </li>
+ 
+  <li class="li_a"><a  href="rizhi.html">日 志</a>
+    <ul>
+<li><a href="rizhi.html">最新日志</a></li>
+<li><a href="#">热门杂志</a></li>
+<li><a href="#">随笔</a></li>
+<li><a href="#">心灵鸡汤</a></li>
+</ul>
+  </li>
+  <li class="li_a"><a href="img.html">相 册</a>
+    <ul>
+<li><a href="img.html">风景照</a></li>
+<li><a href="#">生活照</a></li>
+<li><a href="#">大头贴</a></li>
+<li><a href="#">写真集</a></li>
+</ul>
+  </li>
+ 
+  <li class="li_a"><a href="liuyan.html">留 言</a>
+    <ul>
+<li><a href="#">留言板</a></li>
+<li><a href="#">好友动态</a></li>
+<li><a href="#">最近访问</a></li>
+<li><a href="#">历史记录</a></li>
+</ul>
+  </li>
+  
+  <li class="li_a"><a href="me.html">关于我</a>
+    <ul>
+<li><a href="#">网站介绍</a></li>
+<li><a href="#">关于我们</a></li>
+<li><a href="#">联系我们</a></li>
+<li><a href="#"></a></li>
+</ul>
+  </li>
+   
+  <li class="li_a"><a href="flash.html">FL简历</a>
+    <ul>
+<li><a href="flash.html">简历欣赏</a></li>
+<li><a href="#">关于我们</a></li>
+<li><a href="#">联系我们</a></li>
+<li><a href="#"></a></li>
+</ul>
+  </li>
+  </ul>
+  </div>
+  <div id="main">
+  <h4>我的点滴 &gt;&gt;<a href="#">我的作品</a></h4>
+    <h5>--姓名--</h5>
+  <p>
+  需要我说么，你们一定都知道。
+  </p>
+<hr>
+    <h5>--性别--</h5>
+  <p>
+  我不是男生，所以我是女生。
+  </p>
+<hr>
+  <h5>--性格--</h5>  
+  <p>
+ 开朗外向，易与人相处，脾气不好也不坏，做朋友的没的说。
+  </p>
+<hr>
+<h5>--爱好--</h5>
+  <p>
+ 爱好十分广泛，从小到大什么都喜欢过，什么都强悍过，什么都经历过，要说我就是一个看起来简单实际上经历丰富的人。
+  </p>
+  <hr>
+<h5>--年龄--</h5>
+  <p>
+保密.....虚....不要随便问女孩子的年龄哦。。
+  </p>
+  <hr>
+  <h5>--技能--</h5>
+  <p>
+  技能非常多，说也说不完。总之一句话，该会的我都会，不该会的我也会一点点。我很低调的。。。
+  </p>
+  <hr>
+   <h5>--手机号--</h5>
+  <p>
+   13886179200 非常好记的号码。
+  </p>
+  <hr>
+  <h5>--地址--</h5>
+   <p>
+   武汉。
+  <hr>
+    <h5>--邮件--</h5>
+   <p>
+   我的邮箱很有个性哦，summerccit@163.com 是我的英文名加我们学校哦！！！
+  <hr>
+    <h5>--工作经历--</h5>
+   <p>
+   什么都经历过，什么都体验过，好的坏的，累的不累的，全部尝试过了，真的感悟到社会了啊。
+  <hr>
+   <h5>--期望工作岗位--</h5>
+   <p>
+   做自己喜欢的事情 我就会永尽所有精力去做去完成她。爱上工作比什么都好，当然是"网页设计师"了。。
+  <hr>
+  <a href="#">下一页</a>
+   </div>
+  <div id="foot">版权归F12班黄晶晶同学所有<br />2009年10月15日</div>
+
+</body>
+</html>

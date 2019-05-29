@@ -1,0 +1,575 @@
+@charset "utf-8";
+*{margin:0px auto; padding:0px; }
+html,body {
+	margin:0px auto;
+	padding:0px;
+	font-size: 12px;
+	margin:0px auto; padding:0px;
+}
+
+contain {
+	height: auto;
+	width: 964px;
+	margin:0px auto; padding:0px;
+}
+#top {
+	background-color: #83cb5d;
+	background-image: url(img/top.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 26px;
+	width: 964px;
+}
+#logo {
+	background-color: #FFFFFF;
+	background-image: url(img/logo.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	height: 74px;
+	width: 964px;
+}
+#banner {
+	background-color: #a5dd3d;
+	background-image: url(img/banner.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 303px;
+	width: 964px;
+}
+#vi {
+	background-color: #7fb54b;
+	background-image: url(img/vi.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 48px;
+	width: 964px;
+	font-size: 13px;
+	font-style: italic;
+}
+#vi a {
+	font-family: "宋体";
+	font-style: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+#vi ul {
+	margin-top: 16px;
+	margin-left: 20px;
+}
+#kong2 {
+	background-color: #F2F2F2;
+	height: 20px;
+	width: 964px;
+	margin-top: 20px;
+}
+
+
+#main {
+	height: auto;
+	width: 964px;
+}
+
+
+#vi-kong {
+	background-image: url(img/vi-kong.gif);
+	height: 20px;
+	width: 964px;
+}
+#foot {
+	height: 135px;
+	width: 964px;
+	background-image: url(img/foot-logo.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+#foot-text ul {
+	margin-left: 0px;
+	width: 680px;
+	text-align: left;
+	margin-top: 15px;
+}
+#foot-text a {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #848484;
+	text-decoration: none;
+}
+
+#foot-text {
+	height: 75px;
+	width: 680px;
+	margin-left: 284px;
+	border-left:1px solid #999999;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	padding-left: 20px;
+	color: #848484;
+	padding-top: 10px;
+}
+#top li{
+	color: #FFFFFF;
+	margin-top: 3px;
+	margin-left: 5px;
+	float: left;
+	list-style-type: none;
+}
+#vi li{
+	color: #FFFFFF;
+	font-size:13px;
+	margin-top: 3px;
+	margin-left: 5px;
+	float: left;
+	list-style-type: none;
+}
+#foot-text li {
+	clear: left;
+	color: #848484;
+	font-size: 12px;
+	list-style-type: none;
+	margin-left: 0px;
+	width: 680px;
+	margin-top: 8px;
+	height: auto;
+}
+
+#top ul {
+	margin-left: 750px;
+	font-size: 14px;
+}
+
+#top a {
+	font-family: "华文楷体", "宋体";
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+hr {
+	color:#CCCCCC; border:1px dashed;
+}
+a,a:visited {color: #000000;
+}
+a:hover{font-weight:bold;}
+
+#left {
+	height: auto;
+	width: 190px;
+	float: left;
+	margin-left: 17px;
+}
+#right {
+	height: auto;
+	width: 600px;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+#right-title {
+	width: 600px;
+	margin-top: 30px;
+	padding-left: 20px;
+	margin-left: 30px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #76ba03;
+	font-size: 14px;
+	padding-bottom: 0px;
+	background-image: url(img/tele-bg.gif);
+	background-repeat: repeat-x;
+}
+
+#right01 {
+	height: auto;
+	width: 600px;
+	border: 1px solid #DDDDDD;
+	margin-top: 30px;
+	padding-top: 10px;
+	margin-left: 30px;
+	background-image: url(img/fenlan-tp.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	padding-left: 20px;
+}
+.tongxun table {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #CCCCCC;
+}
+#kongkong {
+	width: 600px;
+	height: 53px;
+	text-align: center;
+	padding-top: 30px;
+}
+
+#right01 p {
+	font-size: 12px;
+	font-family: "宋体";
+}
+#right03 img {
+	float: right;
+	margin-top: 10px;
+}
+#right03-pic {
+	height: auto;
+	width: 540px;
+	text-align: center;
+	margin-right: 60px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+
+
+#right03 {
+	height: auto;
+	width: 600px;
+	border: 1px solid #DDDDDD;
+	margin-top: 30px;
+	padding-top: 10px;
+	padding-left: 20px;
+	margin-left: 30px;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+#right03 p {
+	font-size: 12px;
+	font-family: "宋体";
+	line-height: 2em;
+}
+#right00 {
+	height: auto;
+	width: 600px;
+	padding-top: 10px;
+	padding-left: 20px;
+	margin-top: 30px;
+	margin-left: 30px;
+	border: 1px solid #DDDDDD;
+}
+#liuyan-text {
+	height: auto;
+	width: 600px;
+}
+
+#right00 h6 {
+	font-size: 14px;
+}
+p {
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	text-indent: 2em;
+}
+
+#left00 {
+	height: 380px;
+	width: 170px;
+	background-image: url(img/left-dh-bg.gif);
+	background-repeat: repeat-y;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+#left00-1,#left00-2,#left00-3,#left00-4,#left00-5,#left00-6,#left00-7,#left00-8
+ {
+	height: auto;
+	width: 170px;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #CCCCCC;
+	padding-bottom: 5px;
+}
+
+#left01 {
+	height: 87px;
+	width: 190px;
+}
+ul {
+	margin-left: 15px;
+	list-style-position: inside;
+	list-style-type: disc;
+}
+
+
+#left02 {
+	height: 109px;
+	width: 190px;
+}
+h3 {
+	font-family: "华文行楷", "宋体";
+	font-size: 14px;
+	font-weight: normal;
+}
+#right03 h5 {
+	font-size: 12px;
+	font-weight: normal;
+	text-align: center;
+	height: auto;
+	width: 600px;
+	margin-top: 50px;
+}
+#right03 h4 {
+	text-align: left;
+	width: 600px;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+
+
+h3 img {
+	margin-right: 5px;
+}
+
+h1 {
+	font-size: 14px;
+	font-weight: normal;
+	height: auto;
+	width: 460px;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #CCCCCC;
+	background-image: url(img/more.gif);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	color: #333333;
+	float: left;
+}
+h4  {
+	float: none;
+	height: auto;
+	width: 300px;
+	font-size: 12px;
+	font-weight: normal;
+	text-align: right;
+	margin-left: 400px;
+}
+ul {
+	clear: left;
+	margin-bottom: 15px;
+}
+li {
+	list-style-position: inside;
+	list-style-type: square;
+	margin-top: 10px;
+}
+
+
+h1 img {
+	margin-right: 5px;
+}
+#right03-pic p {
+	text-align: left;
+	font-size: 14px;
+}
+#teacher01,#teather02 {
+	height: auto;
+	width: 280px;
+	background-color: #f8f8f8;
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+}
+#lyan {
+	height: 100px;
+	width: 590px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+}
+.bg {
+	background-image: url(img/tele-bg.gif);
+	background-repeat: repeat-x;
+	font-weight: normal;
+	padding-left: 10px;
+}
+.tongxun table {
+	margin-top: 10px;
+}
+
+
+.xinxi{height: auto;
+	width: 260px;
+	background-color: #f8f8f8;
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding-left: 10px;}
+#girl,#boy{
+	height: auto;
+	width: 275px;
+	background-color: #f8f8f8;
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+}
+.gb {
+	height: auto;
+	width: 560px;
+	background-image: url(img/pic2.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-left: 20px;
+	margin-top: 10px;
+}
+
+#right01 table {
+	line-height: 25px;
+}
+
+#girl h6 img, #boy h6 img {
+	height: 15px;
+	width: 20px;
+	float:left;
+	font-family: "宋体";
+}
+#right00 p img {
+	float: right;
+	height: auto;
+	width: auto;
+}
+
+h6 {
+	font-family: "宋体";
+	font-size: 12px;
+	font-weight: bold;
+	vertical-align: middle;
+}
+#girl  h6,#boy h6 {
+	font-weight: normal;
+}
+#right00 img {
+	font-weight: normal;
+}
+
+
+
+#girl li, #boy li {
+	list-style-type: none;
+}
+.tongxun {
+	height: auto;
+	width: 580px;
+	background-color: #f8f8f8;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.jieshao {
+	height: auto;
+	width: 580px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#right01 h1 {
+	font-size: 14px;
+	font-weight: normal;
+	height: 20px;
+	width: 460px;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #CCCCCC;
+	background-image: url(img/tele-bg.gif);
+	background-repeat: repeat-x;
+	color: #333333;
+	float: left;
+}
+.hh1{font-size: 14px;
+	font-weight: normal;
+	height: 20px;
+	width: 460px;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #CCCCCC;
+	background-image: url(img/tele-bg.gif);
+	background-repeat: repeat-x;
+	color: #333333;
+	float: left;}
+.hh2{
+	font-size: 14px;
+	font-weight: normal;
+	height: 20px;
+	width: 200px;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #CCCCCC;
+	color: #333333;
+	float: left;
+}
+.rr3 {
+	margin-left: 80px;
+}
+
+.hhh1{
+	margin-left:350px;
+	font-size: 12px;
+}	
+#right00 p img {
+	margin-right: 30px;
+}
+#pho01,#pho02,#pho03{
+	margin: 10px;
+	padding: 10px;
+	height: auto;
+	width: 500px;
+	border: 1px solid #CECECE;
+}
+#pho01 img, #pho02 img, #pho03 img {
+	margin-left: 30px;
+}
+#pho-nv {
+	height: auto;
+	width: 600px;
+}
+#pho-nv tr {
+	text-align: center;
+}
+#pho-nv img {
+	height: 150px;
+	width: 150px;
+}
+.ly {
+	width: 100px;
+	margin-left: 200px;
+	font-size: 12px;
+}
+a img {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+a{ text-decoration:none;}
+#jieshao {
+	font-family: "宋体";
+	font-size: 12px;
+	line-height: 2em;
+}
+#vi a:hover {
+	font-size: 14px;
+}
