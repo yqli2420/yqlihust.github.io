@@ -1,0 +1,67 @@
+<style type="text/css"> 
+*{ 
+padding:0px; 
+margin: 0px; 
+} 
+#thead { 
+/*固定表头*/ 
+position:fixed; 
+/* 
+表头显示层次高于表体，防止空白行和表头重合时出现重影*/ 
+z-index:2; 
+background:#ECECFF; 
+} 
+#spacetr{ /* 空白的tr 用来填补表头遮盖的数据*/ 
+position:relative; 
+z-index:1; 
+} 
+.tdata { /* 显示表格数据的tr */ 
+position:relative; 
+z-index:1; 
+} 
+</style> 
+js脚本 
+复制代码
+代码如下:
+$(function(){ 
+$("#spacetr").css("height",$("#thead").css("height")); 
+//将空白行的高度设置为和表头等高,使被遮挡的数据刚好下移表头高度的距离 
+}); 
+jsp代码： 
+复制代码
+代码如下:
+<div style="width:100%"> 
+<%--<img 
+src="${pageContext.request.contextPath}/images/post_head.jpg"/> --%> 
+<table id="table" border="1px gray solid " cellspacing="0" 
+cellpadding="0" width="100%;" > 
+<tr id="thead"> 
+<td 
+width="9%" align="center">招聘学科</td> 
+<c:forEach 
+items="${postnames}" var="postname"> 
+<td valign="bottom" 
+align="center"> 
+${postname} 
+</td> 
+</c:forEach> 
+</tr> 
+<tr id="spacetr"> 
+<td width="9%"></td> 
+<c:forEach items="${postnames}" var="postname"> 
+<td> 
+</td> 
+</c:forEach> 
+</tr> 
+<c:forEach 
+items="${shcoolsPostnumbers}" var="schoolPostnumbers"> 
+<tr 
+class="tdata"> 
+<td width="9%" >${schoolPostnumbers.key}</td> 
+<c:forEach items="${schoolPostnumbers.value}" var="postnumber"> 
+<td align="center"> ${postnumber} </td> 
+</c:forEach> 
+</tr> 
+</c:forEach> 
+</table> 
+</div>
