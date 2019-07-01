@@ -1,40 +1,66 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/index.css">
-    <title>It's First Demo</title>
+<!--动态生成指定行数和列数的可编辑表格-->
+<style>
+
+</style>
+<script>
+function addrow(){
+  var c=document.getElementById('mytable');//获得表格的信息
+  if( c.rows.length==0){//如果是向一个空表增加一行
+ var x=c.insertRow(0);//向空表插入一行
+ var y=x.insertCell(0);//向新行插入一列
+ y.innerHTML="new cell0";
+  }
+else{
+var z=c.rows[0].cells;//如果不是空表，首先获得表格有多少列，先获取再插入新行
+var x=c.insertRow(0);
+for(var i=0;i<z.length;i++){//依次向新行插入表格列数的单元格
+     var y=x.insertCell(i);
+y.innerHTML="new cell"+i;
+ }
+}
+}
+function delrow(){
+var x=document.getElementById("mytable");
+x.deleteRow(0);//删除一行
+}
+function addcol(){
+var c=document.getElementById('mytable');//获取表格信息
+var len=c.rows.length;//获得行数
+var ro=c.rows[0].cells;
+var len2=ro.length;//获得列数
+for(var i=0;i<len;i++){
+var x=c.rows[i].insertCell(len2);//依次向每一行的末尾插入一个新列
+x.innerHTML="new cell"+len2;
+}
+}
+function delcol(){
+var c=document.getElementById('mytable');//获取表格信息
+var len=c.rows.length;//获取表格的行数
+var ro=c.rows[0].cells//获取表格的列数
+var len2=ro.length-1;
+for(var i=0;i<len;i++){
+var x=c.rows[i].deleteCell(len2);//删除每一行末尾的单元格
+}
+}
+</script>
+<meta charset="UTF-8">
 </head>
 <body>
-<header class="text-center">单向数据绑定列表视图</header>
-<main>
-    <table class="table table-responsive">
-        <thead class="thead">
-            <tr>
-                <th>id号</th>
-                <th>attribute</th>
-                <th id="operate">
-                    操作
-                    <div class="hides">
-                        <button class="btn btn-info pushRow">表尾插入一行</button>
-                        <button class="btn btn-info unshiftRow">表头插入一行</button>
-                    </div>
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="4">+</td>
-            </tr>
-        </tfoot>
-    </table>
-</main>
+<p><input type="button" value="增加行" onclick="addrow()" >&nbsp&nbsp<input type="button" value="删除行" onclick="delrow()">&nbsp&nbsp
+<input type="button" value="增加列" onclick="addcol()">&nbsp&nbsp<input type="button" value="删除列" onclick="delcol()"></p>
+<table frame="border" rules="all" id="mytable">
+<caption>测试表</caption>
+<tr>
+<td>单元格</td><td>单元格</td>
+</tr>
+</table>
 </body>
-<script src="js/bb.js"></script>
 </html>
+--------------------- 
+作者：菜鸟下山 
+来源：CSDN 
+原文：https://blog.csdn.net/huzijia888/article/details/78701091 
+版权声明：本文为博主原创文章，转载请附上博文链接！
