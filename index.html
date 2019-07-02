@@ -1,8 +1,79 @@
 <html>
     <head>
         <title>yqli 技术进阶</title>
+        <!--
+        方法一：定位
+    -->
+ <style>
+        .wrap{
+            width:900px;
+            margin:0 auto;
+            position: relative;
+        }
+        #left{
+            width:200px;
+            height:500px;
+            background: #ccffff;
+            position: absolute;
+            top:0;
+            left:0;
+        }
+        #right{
+            width:700px;
+            height:500px;
+            background: #ffcccc;
+            position: absolute;
+            top:0;
+            right:0;
+        }
+    </style>
+ <!--
+       方法二： 纯浮动式
+    -->
+ <style>
+        .wrap{
+            width:900px;
+            margin:0 auto;
+            overflow: hidden;
+        }
+        #left{
+            width:200px;
+            height:500px;
+            background: #ccffff;
+            float: left;
+        }
+        #right{
+            width:700px;
+            height:500px;
+            background: #ffcccc;
+            float: left;
+        }
+    </style>
+<!--
+       方法三： 混合浮动+普通流
+    -->
+ 
+<style>
+        .wrap{
+            margin:0 auto;
+            width:80%;
+        }
+        #left{
+            width:200px;
+            height:500px;
+            background: #ccffff;
+            float: left;
+        }
+        #right{
+            height: 500px;
+            background: #ffcccc;
+            margin-left:200px;
+        }
+    </style>
     </head>
     <body>
+        <div class="wrap">
+        <aside id="left">
         <h1>yqli 滴水石穿</h1>
         <h2>author: yongqiang li (yongqiangli@alumni.hust.edu.cn)</h2>
         <br />
@@ -23,5 +94,8 @@
         <font size="5"><a href="https://yqlihust.github.io/program_language.html">Language</a></font><br>
         <br />
         <font size="5"><a href="https://yqlihust.github.io/tts_paper.html">Life</a></font><br>
+            </aside>
+            <section id="right">li</section>
+        </div>
     </body>
 </html>
