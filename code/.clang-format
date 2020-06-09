@@ -1,0 +1,7 @@
+# Clang format configuration.
+#
+# This should be soft linked from project root as '.clang-format'
+# For details see:
+# http://clang.llvm.org/docs/ClangFormatStyleOptions.html
+---
+BasedOnStyle: Google

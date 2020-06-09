@@ -1,0 +1,14 @@
+tts/engine/hmm/
+tts/nlp/rnn_g2p
+tts/base/
+tts/nlp/tn/common_pattern_handler.h
+tts/nlp/tn/english_text_normalizer.h
+tts/nlp/tn/text_normalizer_util.h
+tts/portable/scripts/include/
+tts/production/scripts/
+tts/synthesizer/label_generator/fast_printf.h
+tts/synthesizer/label_generator/fast_printf.cc
+third_party/
+tts/util/encoder/sampling_rate_converter.cc
+tools/parse_release_resource.py
+tts/synthesizer/vocoder/lpcnet_vocoder
