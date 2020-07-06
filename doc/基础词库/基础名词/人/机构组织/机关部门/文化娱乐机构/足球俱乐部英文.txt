@@ -1,0 +1,46 @@
+./dic/SOCCERCLUB.txt
+AC米兰
+AEK
+Anderlecht
+Arsenal
+A米
+Barcelona
+Bayern
+Benfica
+Bordeaux
+Bremen
+CSKA Moskva
+Celtic
+Chelsea
+Dynamo Kyiv
+Galatasaray
+Hamburg
+Internazionale
+Juwentus
+K?benhavn
+Lazio
+Levski
+Lille
+Liverpool
+Lyon
+Man. United
+Milan
+Olympiacos
+PSV
+Porto
+Real Madrid
+Roma
+Shakhtar
+Spartak Moskva
+Sporting
+Steaua
+Valencia
+罗马
+曼联
+米兰
+莫斯科
+枪手
+切尔西
+塞尔提克
+瓦伦西亚
+尤文图斯

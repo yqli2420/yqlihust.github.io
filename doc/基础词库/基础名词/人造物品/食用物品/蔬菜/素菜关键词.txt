@@ -1,0 +1,4 @@
+./dic/VEGETABLE.txt
+ЛШ
+ЛШІЛ
+ЗаІЛ

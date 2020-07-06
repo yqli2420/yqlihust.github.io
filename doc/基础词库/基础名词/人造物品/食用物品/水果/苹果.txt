@@ -1,0 +1,3 @@
+./dic/APPLE.txt
+Æ»¹û
+APPLE

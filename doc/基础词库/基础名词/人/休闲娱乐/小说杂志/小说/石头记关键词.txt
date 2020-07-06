@@ -1,0 +1,4 @@
+./dic/STJ.txt
+石头记
+石头
+SHITOUJI

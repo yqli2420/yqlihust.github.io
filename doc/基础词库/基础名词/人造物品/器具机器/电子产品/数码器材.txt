@@ -1,0 +1,17 @@
+./dic/OTHERDIGITAL.txt
+CUBE
+GB
+GBA
+NDS
+NGC
+NGS
+PS2
+PS3
+PSP
+U盘
+WII
+XBOX
+闪寸
+移动硬盘
+播放器
+数据线

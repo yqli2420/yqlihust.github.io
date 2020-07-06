@@ -1,0 +1,6 @@
+./dic/DC.txt
+CAMERA
+DC
+DIGITAL CAMERA
+数码相机
+相机

@@ -1,0 +1,4 @@
+./dic/GANQING.txt
+感情
+情感
+爱情

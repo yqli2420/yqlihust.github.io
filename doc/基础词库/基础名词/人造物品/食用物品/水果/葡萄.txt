@@ -1,0 +1,3 @@
+./dic/GRAPE.txt
+фоля
+GRAPE

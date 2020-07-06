@@ -1,0 +1,102 @@
+./dic/MUSIC.txt
+Ambient
+BOSSA NOVA
+Big-Beat
+Black Metal
+Britpop
+Chill Out
+Death
+Drum''''n''''Bass
+Dub
+Electrophonic Music
+Glam Metal
+Grunge
+HOUSE
+Hip Hop
+Industrial Metal
+Jungle
+NEW AGE
+Pop Metal
+Power Metal
+Psychedelic Trance
+R&B
+Rap
+Rhythm & Blues
+Rock
+Techno
+Technology
+Trance
+Trip- Hop
+blues
+folk
+jazz
+pop
+打击乐
+古典
+交响乐
+爵士
+快节奏
+蓝调
+流行
+慢节奏
+民间
+轻音乐
+抒情
+说唱
+舞曲
+摇滚
+重金属
+筝曲
+RAP
+DEATHROCK
+黑人流行音乐
+Acid House
+Deep House
+Garage
+Hard House
+Progressive House
+Epic House
+Trible House 
+Gangsta Rap
+Synth Pop
+ORCHESTRA 
+CHAMBER POP
+FOLK 
+民歌
+CLASSICAL POP 
+ACAPPELLA
+WORLD MUSIC
+DREAM-POP
+电子音乐
+高科技舞曲
+迷幻舞曲
+Goa Trance 
+Break beat
+Brit-Hop
+Drum N'''' Bass 
+Electro 
+Minimalism 
+黑色金属
+死亡金属 
+Doom 
+毁灭金属 
+华丽金属 
+Grindcore
+Hardcore
+Hard Rock 
+重摇滚 
+Heavy Metal 
+Industrial Metal 
+工业金属 
+Neo-Classical 
+新古典金属 
+流行金属 
+强力金属 
+Progressive Metal 
+前卫金属 
+Punk
+朋克 
+Speed Metal
+速度金属 
+Thrash Metal 
+鞭击金属 

@@ -1,0 +1,4 @@
+./dic/GUOJIADUI.txt
+国家
+国家队
+国足

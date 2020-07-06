@@ -1,0 +1,70 @@
+./dic/NBATEAMWEAK.txt
+76ers
+76人
+Atlanta Hawks
+Boston Celtics
+Charlotte Bobcats
+Memphis Grizzlies
+Milwaukee Bucks
+Minnesota Timberwolves
+New Orleans/OklaCity Hornets
+Orlando Magic
+Philadelphia 76ers
+Portland Trail Blazers
+Sacramento Kings
+Seattle SuperSonics
+atlanta
+babcats
+blazers
+boston
+bucks
+celtics
+charlotte
+grizzlies
+hawks
+hornets
+kings
+magic
+memphis
+milwaukee
+minnesota
+new orleans
+nuggets
+orlando
+partland
+philadelphia
+raptors
+sacramento
+seattle
+supersonics
+timberwolves
+奥兰多
+暴龙
+波士顿
+波特兰
+超音速
+丹佛
+多伦多
+费城
+国王
+黄蜂
+灰熊
+掘金
+开拓者
+凯尔特人
+猛龙
+孟菲斯
+密尔沃基
+明尼苏达
+魔术
+七六人
+萨克拉门托
+塞尔提克
+森林狼
+山猫
+西雅图
+夏洛特
+新奥尔良
+雄鹿
+亚特兰大
+鹰

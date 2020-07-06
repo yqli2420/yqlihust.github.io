@@ -1,0 +1,14 @@
+./dic/TYPE.txt
+A
+AB
+B
+O
+A型
+AB型
+B型
+O型
+A型血
+AB型血
+B型血
+O型血
+血型

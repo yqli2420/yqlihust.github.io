@@ -1,0 +1,7 @@
+./dic/COMPUTER.txt
+NB
+PC
+laptop
+笔记本
+电脑
+台式机

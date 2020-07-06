@@ -1,0 +1,4 @@
+./dic/GRADUATE.txt
+大学
+考研
+研究生

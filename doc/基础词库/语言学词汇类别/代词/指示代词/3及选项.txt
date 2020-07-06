@@ -1,0 +1,10 @@
+./dic/ANSWERTHREE.txt
+3
+三
+第三
+C
+san
+THREE
+three
+第3
+叁

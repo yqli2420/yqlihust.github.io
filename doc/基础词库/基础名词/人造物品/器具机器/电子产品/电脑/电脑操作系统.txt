@@ -1,0 +1,84 @@
+./dic/CZXT.txt
+Apple DOS
+BS2000
+Boot Camp
+CHORUS
+CPM操作系统
+CPM系统
+ChorusOS
+Commodore PET
+Cromix
+EPOC
+FreeDOS
+Leopard
+LindowsOS
+Linux
+MS-DOS
+MSDOS 
+Mac OS
+Mac OS X
+Microsoft Bob
+Microsoft Windows CE
+Mini-FLEX
+NeXTStep
+OS/390 
+OSF/1
+PC-DOS
+PCDOS
+Palm OS
+Pocket PC
+Primos
+ProDOS
+ROM OS's
+ReadyBoost
+SP2 VistaSP1
+SSB-DOS
+Syllable 
+TI99-4
+TRS-DOS
+UNIflex
+Ultrix
+UniCOS
+Unix
+Unix系统
+Vista
+WIN2000
+WIN95
+WIN98
+WINDOWS2000
+WINDOWS95
+WINDOWS98
+WinMe
+Windows 1.0
+Windows 2.0
+Windows 2000
+Windows 3.1
+Windows 95
+Windows 98
+Windows ME
+Windows NT
+Windows NT 3.5
+Windows NT 4
+Windows NT3.5
+Windows NT4
+Windows Server 2003
+Windows Server 2003 64-bit Edition
+Windows Server2002
+Windows Vista
+Windows Vista SP1 RC
+Windows XP
+Windows XP Media Center Edition
+Windows XP Professional x64 Edition
+Windows1.0
+Windows2.0
+Windows2000
+Windows3.1
+Windows95
+Windows97
+WindowsNT
+WindowsXP
+XP SP3
+XPSP3
+Xenix
+z/OS
+微软Xenix
