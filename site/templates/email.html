@@ -1,0 +1,35 @@
+﻿{% extends "base.html" %}
+{% load custom_markdown %}
+{% load staticfiles %}
+{% block content %}
+<h2 class="t_nav"><a href="/">网站首页</a><a href="/">邮件</a></h2>
+<div class="div_email">
+	<form class="send_email_form" method="post" action="/send_email/">
+		{% csrf_token %}
+		<table width="600" cellpadding="0" cellspacing="0" border="0">
+			<tbody>
+			<tr>
+				<td>收件人:</td>
+				<td><input type="text" name="to"><input type="hidden" name="from" value="1107211209@qq.com"></td>
+			</tr>
+			<tr>
+				<td>主题:</td>
+				<td><input type="text" name="subject"></td>
+			</tr>
+			<tr>
+				<td>延期:</td>
+				<td><input type="text" name="time"></td>
+			</tr>			
+			<tr>
+				<td>内容:</td>
+				<td><textarea type="text" cols=30 rows=10 name="content"></textarea></td>
+			</tr>
+			<tr>
+				<td><button type="button" value='Reset'">Reset</button></td>
+				<td><input type="submit" value='Send'"></td>
+			</tr>	
+			</tbody>
+		</table>       
+	</form>
+</div>
+{% endblock %}

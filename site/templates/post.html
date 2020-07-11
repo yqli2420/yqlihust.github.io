@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% load custom_markdown %}
+{% block content %}
+<div class="posts">
+    <h2 class="t_nav"><a href="/">网站首页</a><a href="/" >{{ post.category }}</a><a href="/">{{ post.title }}</a></h2>
+    <div id="index_view">
+        <div class="blog_content_div">
+            <h1 class="c_title">{{ post.title }}</h1>
+            <input type="hidden" name="blog_id_input" id="blog_id_input" value="{{ post.id}}">
+            <input type="hidden" name="blog_category_input" id="blog_category_input" value="{{ post.category}}">
+            <p class="box"><span>时间：{{ post.modify_time|date:'Y /m /d' }}</span> <span>作者：{{post.author }}</span><span>阅读({{ post.reads }})</span>
+            </p>
+            <ul>
+                <p>{{ post.content|custom_markdown}}</p>
+            </ul>
+        </div><!-- end blog_conttent_div-->
+   
+        <div class="prev_next_blog_div" style="margin:30px;">
+            <span>上一篇:<a href="#" id="prev_blog_a">没有前一篇了</a></span>
+            </br>
+            <span>下一篇:<a href="#" id="next_blog_a">没有后一篇了</a></span>
+        </div>
+        <div class="comment_div">
+            {% include "uyan.html" %}
+        </div>
+        <div class="otherlink">
+            <h2>相关文章</h2>
+            <ul>
+                <li><a href="/" class="related_blog_a">没有更多先关文章</a></li>
+                <li><a href="/" class="related_blog_a">没有更多先关文章</a></li>
+                <li><a href="/" class="related_blog_a">没有更多先关文章</a></li>
+                <li><a href="/" class="related_blog_a">没有更多先关文章</a></li>
+                <li><a href="/" class="related_blog_a">没有更多先关文章</a></li>
+                <li><a href="/" class="related_blog_a">没有更多相关文章</a></li>
+            </ul>
+        </div><!-- end otherlink-->
+    </div><!-- end index_view-->
+</div><!-- /posts -->
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+        var category = String($("#blog_category_input").val());
+        /* 获取相关文章*/
+        var related_blog_a=document.getElementsByClassName("related_blog_a");
+        jQuery.post('/related_articles/', {
+				category:category
+				},
+				function (result) {
+					$.each(result,function(i,item){
+						related_blog_a[i].innerHTML=(item.title);
+					    related_blog_a[i].href=('/'+item.id+'/');
+				    });
+				});
+        });
+
+    var prev_blog_a = document.getElementById("prev_blog_a");
+    var next_blog_a = document.getElementById("next_blog_a");
+    var cur_blog_id=$("#blog_id_input").val();
+    jQuery.post('/get_prev_next_articles/',{
+                blog_id:cur_blog_id
+            },
+            function(result){
+                if($.isEmptyObject(result[0])==false){
+                    prev_blog_a.href=('/'+result[0].id+'/');
+                    prev_blog_a.innerHTML=(result[0].title);
+                }
+                if($.isEmptyObject(result[1])==false){
+                    next_blog_a.href=('/'+result[1].id+'/');
+                    next_blog_a.innerHTML=(result[1].title);
+                }
+            }
+    );
+    
+	var blog_id = $("#blog_id_input").val();
+    jQuery.post('/add_reads/', {
+            blog_id: blog_id
+           },
+           function (result) {
+                $("#blog_reads_label").val(result);
+          }
+     );
+        
+
+</script>
+{% endblock %}

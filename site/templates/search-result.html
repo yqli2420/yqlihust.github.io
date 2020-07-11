@@ -1,0 +1,42 @@
+﻿{% extends "base.html" %}
+{% load custom_markdown %}
+{% load staticfiles %}
+{% block content %}
+    <h2 class="t_nav"><a href="/">网站首页</a><a href="/">搜索结果</a><a href="/">{{ key }}</a></h2>
+    {% for post in post_list %}
+        <li>
+            <div class="arrow_box">
+                <div class="ti"></div>
+                <!--三角形-->
+                <div class="ci"></div>
+                <!--圆形-->
+                <h2 class="title"><a href="{% url 'detail' id=post.id %}">{{ post.title }}</a></h2>
+                <ul class="textinfo">
+                    <a href="/"><img src="{% static 'images/'%}{{ post.picture }}"></a>
+                    <p>{{ post.content|custom_markdown|truncatewords_html:10 }}</p>
+                </ul>
+                <ul class="details">
+                    <li class="icon-time">{{ post.modify_time|date:'Y /m /d' }}</li>
+                    <li class=""><a href="#" title="类别">{{ post.category }}</a></li>
+
+                    <li class="reads"><a href="#" title="阅读">阅读({{ post.reads }})</a></li>
+                    <li class="likes"><a href="#" title="获赞" id="blog_likes_{{ post.id }}" class="likes_a"></a></li>
+                    <li class="comments"><a href="#" title="评论" id="blog_comments_{{ post.id }}" class="comments_a"></a></li>
+
+                </ul>
+            </div><!--arrow_box end-->
+        </li>
+    {% endfor %}
+    {% if post_list.object_list and post_list.paginator.num_pages > 1 %}
+        <div>
+            <ul class="pager">
+                {% if post_list.has_previous %}
+                    <li style="float: left;margin:10px 5px;"><a href="?key={{ key }}&page={{ post_list.previous_page_number }}">上一页</a></li>
+                {% endif %}
+                {% if post_list.has_next %}
+                    <li style="float: right;margin:10px 40px;"><a href="?key={{ key }}&page={{ post_list.next_page_number }}">下一页</a></li>
+                {% endif %}
+            </ul>
+        </div>
+    {% endif %}
+{% endblock %}
