@@ -1,4 +1,0 @@
-./dic/FANQIAN.txt
-饭前
-吃饭前
-饭前便后

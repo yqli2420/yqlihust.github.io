@@ -1,5 +1,0 @@
-./dic/BUILDING.txt
-二手房
-公积金
-购房
-买房

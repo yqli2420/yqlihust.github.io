@@ -1,6 +1,0 @@
-./dic/ANSWERFOUR.txt
-4
-D
-หฤ
-
-หม

@@ -1,5 +1,0 @@
-ipod
-shuffle
-nano
-ipod touch
-ipod classic

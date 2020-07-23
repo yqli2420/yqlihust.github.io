@@ -1,8 +1,0 @@
-./dic/BAREHEADED.txt
-光
-光头
-秃
-秃子
-歇顶
-泄顶
-谢顶

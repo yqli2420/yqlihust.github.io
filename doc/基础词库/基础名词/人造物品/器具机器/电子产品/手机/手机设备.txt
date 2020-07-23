@@ -1,9 +1,0 @@
-mobiletype
-GPS
-Palm
-PDA
-À¶ÑÀ
-3G
-CDMA
-GSM
-ÂþÓÎ·Ñ

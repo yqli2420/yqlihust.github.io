@@ -1,8 +1,0 @@
-./dic/HAIRDRESSING.txt
-皮肤
-肤质
-美容
-保养
-养颜
-抗衰老
-抗皱

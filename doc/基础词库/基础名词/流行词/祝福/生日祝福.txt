@@ -1,9 +1,0 @@
-./dic/XIAOIBIRTH.txt
-happy birthday 
-生日快乐
-猪你生日快乐
-祝你生日快乐
-生日愉快
-生日好
-生辰快乐
-happy birthday to you

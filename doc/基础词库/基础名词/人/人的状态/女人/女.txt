@@ -1,7 +1,0 @@
-./dic/NV.txt
-GIRL
-MM
-WOMEN
-女
-女人
-女生

@@ -1,6 +1,0 @@
-./dic/EXPO.txt
-世博会
-EXPO
-WORLD EXPO
-the WORLD EXPO
-世界博览会

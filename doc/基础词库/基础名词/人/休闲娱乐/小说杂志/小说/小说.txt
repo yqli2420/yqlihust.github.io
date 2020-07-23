@@ -1,5 +1,0 @@
-./dic/XIAOSHUO.txt
-书
-小说
-原版
-著作
