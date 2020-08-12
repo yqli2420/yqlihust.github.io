@@ -31,7 +31,7 @@ a,a:hover{
   height: 55px;
   background-image: url(../img/logoo.png);
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: center;
   float: left;
 }
 /*.w_slogan{
