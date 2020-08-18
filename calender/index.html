@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>基于layui的日历记事本</title>
+    <link rel="stylesheet" href="./layui/css/layui.css" />
+    <link rel="stylesheet" href="./layui_exts/laydateNote/laydateNote.css" />
+  </head>
+  <body>
+    <style></style>
+
+    <!-- 你的HTML代码 -->
+
+    <div class="layui-container" style="padding: 15px;">
+      <div class="layui-row">
+        <div class="layui-col-md12">
+          <blockquote class="layui-elem-quote">
+            基于layui的日历记事本
+          </blockquote>
+          <!--容器-->
+          <div class="layui-inline laydateNote" id="test-n2"></div>
+          <!--容器-->
+
+          <!--详细记事本-->
+          <div class="laydateNotebook">
+            <div class="box"></div>
+          </div>
+          <!--容器-->
+          <script type="text/html" id="fineTpl">
+            <ul class="layui-timeline">
+              {{each lists v i  }}
+                <li class="layui-timeline-item">
+                  <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                  <div class="layui-timeline-content layui-text">
+                    <h3 class="layui-timeline-title">{{v.time}}</h3>
+                    <p>
+                     {{v.value}}
+                    </p>
+                    <ul>
+                      <li>《登高》</li>
+                      <li>《茅屋为秋风所破歌》</li>
+                    </ul>
+                  </div>
+                </li>
+                {{/each}}
+                 <li class="layui-timeline-item">
+                  <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                  <div class="layui-timeline-content layui-text">
+                    <div class="layui-timeline-title">...</div>
+                  </div>
+                </li>
+              </ul>
+          </script>
+          <!---->
+        </div>
+      </div>
+    </div>
+    <script src="./layui/layui.js"></script>
+    <script>
+      //调用
+      layui
+        .config({
+          base: './layui_exts' //假设这是你存放拓展模块的根目录
+        })
+        .extend({
+          //设定模块别名
+          laydateNote: '/laydateNote/laydateNote', //如果 mymod.js 是在根目录，也可以不用设定别名
+          artTemplate: '/artTemplate/artTemplate'
+        })
+
+      layui.use(['laydateNote'], function() {
+        //调用
+        var laydateNote = layui.laydateNote
+        laydateNote({
+          elem: '#test-n2', //容器id,CLass
+          //  url: 'test2.json', //异步数据接口,本地浏览时可不设置
+          sort: 'up', //日期排序，默认不设置不排序，up 日期升序，down 日期降序
+          fine: '.laydateNotebook', //开启详细模式
+          done: function(data, chooseData, type) {
+            //回调数据，这里发送你的请求ajax
+            console.log(data, chooseData, type)
+          }
+        })
+      })
+    </script>
+  </body>
+</html>

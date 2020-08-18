@@ -1,0 +1,74 @@
+.laydateNote {
+  position: relative;
+  min-height: 400px !important;
+  width: 100% !important;
+  flex: 2;
+}
+
+.laydateNote .layui-laydate-static,
+.laydateNote .layui-laydate-main,
+.laydateNote .layui-laydate-content table {
+  width: 100% !important;
+  box-shadow: none;
+}
+.laydateNote .layui-laydate-content td {
+  height: 50px !important;
+}
+
+.laydateNote .laydate-day-mark.hide {
+  /**回复原状删除display即可**/
+  display: none;
+}
+.laydateNote .laydate-day-mark.center {
+  display: flex;
+  display: -webkit-flex;
+  /**回复原状添加display：none即可**/
+}
+.laydateNote .laydate-day-mark {
+  margin: auto;
+  line-height: 50px;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0 5px;
+}
+.laydateNote .laydate-day-prev {
+  position: relative !important;
+}
+.laydateNote_text_box {
+  padding: 0 10px;
+}
+.laydate-day-mark {
+  min-height: 50px !important;
+  width: 100%;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.laydateNotebook {
+  background-color: #fff;
+  max-height: 100%;
+  flex: 1;
+  border: 1px solid #d2d2d2;
+  border-left: none;
+  display: none;
+  overflow: hidden;
+  position: relative;
+}
+.laydateNoteFine {
+  display: flex;
+}
+.laydateNoteFine .box {
+  padding: 10px;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  overflow-y: auto;
+}
