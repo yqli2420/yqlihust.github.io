@@ -1,0 +1,163 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{margin:0;padding:0}
+#calendar{width:210px;margin:100px auto; overflow:hidden;border:1px solid #000; padding:20px; position:relative}
+#calendar h4{ text-align:center; margin-bottom:10px}
+#calendar .a1{ position:absolute;top:20px;left:20px;}
+#calendar .a2{ position:absolute;top:20px;right:20px;}
+#calendar .week{height:30px; line-height:20px;border-bottom:1px solid #000; margin-bottom:10px}
+#calendar .week li{ float:left;width:30px;height:30px; text-align:center; list-style:none;}
+#calendar .dateList{ overflow:hidden; clear:both}
+#calendar .dateList li{float:left;width:30px;height:30px; text-align:center; line-height:30px;list-style:none; position:relative}
+#calendar .dateList .ccc{ color:#ccc;}
+#calendar .dateList .red{ background:#F90; color:#fff;}
+#calendar .dateList .sun{ color:#f00;}
+
+/*记事*/
+/*记事标记*/
+#calendar .dateList li::after{content:""; height:10px; width:10px;border-radius:50%; position:absolute; top:0px; right:0px; display:none }
+#calendar .dateList li.ac{ cursor:pointer}
+#calendar .dateList li.ac::after{ display:block;background:red;}
+#calendar .dateList li.ccc.ac::after{ background:#666}
+
+</style>
+<script src="jquery-1.11.3.min.js"></script>
+<script>
+var note_arr=[
+	{"id":119,"year":2016,"month":5,"date":23,"note_cont":"给老板发邮件！"},
+	{"id":104,"year":2016,"month":8,"date":14,"note_cont":"老婆大人的生日！"},
+	{"id":95,"year":2016,"month":9,"date":14,"note_cont":"提交新课程案例！"},
+	{"id":110,"year":2016,"month":10,"date":8,"note_cont":"检查学生作业！"},
+	{"id":174,"year":2016,"month":12,"date":17,"note_cont":"判作业"},
+	{"id":17,"year":2016,"month":12,"date":25,"note_cont":"圣诞节"},
+	{"id":78,"year":2016,"month":12,"date":30,"note_cont":"上交工作总结"},
+	{"id":145,"year":2017,"month":1,"date":1,"note_cont":"元旦放假啦！"},
+	{"id":132,"year":2017,"month":1,"date":27,"note_cont":"春节！！"},
+	{"id":357,"year":2017,"month":2,"date":14,"note_cont":"情人节啦！！"},
+	{"id":570,"year":2017,"month":4,"date":25,"note_cont":"别忘了老爸生日！"},
+	{"id":542,"year":2017,"month":6,"date":21,"note_cont":"结业式！"}
+];
+
+
+$(function(){
+	
+	//年 月 日  本月一共多少天？？   本月第一天是星期几？？
+	var iNow=0;
+	
+	function run(n){
+		var oDate=new Date;
+		
+		oDate.setMonth(oDate.getMonth()+n);//每次先设置月份
+		var year=oDate.getFullYear();
+		var month=oDate.getMonth();
+		var today=oDate.getDate();
+		
+		var allDays=[31,28,31,30,31,30,31,31,30,31,30,31][month];
+		if(  (year%4==0 && year%100!=0 || year%400==0)  &&  month==1 ){//闰年判断： 4年一润  百年不润 400年再润
+			allDays=29;
+		};
+		oDate.setDate(1);//日期调整到本月第一天
+		var firstWeek=oDate.getDay();//读取本月第一天是星期几
+		
+		$('.dateList').empty();//每次先清空
+		
+		for(var i=0;i<firstWeek;i++){//插入空白
+			$('.dateList').append('<li></li>');
+		};
+		
+		//插入日期
+		for(var i=0;i<allDays;i++){//插入日期
+			$('.dateList').append('<li>'+(i+1)+'</li>');
+		};
+		
+		$('.dateList li').each(function(index, element) { //index 索引  element原生对象
+			var inner=$(this).text();
+			if(n<0){//前月
+				$(this).addClass('ccc');
+			}else if(n==0){//本月
+				if(inner<today){
+					$(this).addClass('ccc')
+				}else if(inner==today){
+					$(this).addClass('red')
+				}else if(index%7==0 || index%7==6){
+					$(this).addClass('sun')	
+				}
+			}else{//后月
+				if(index%7==0 || index%7==6){
+					$(this).addClass('sun')	
+				}
+			};
+			//--------------------------------------
+			//搜索计事数组，查找匹配内容
+			for(var k=0;k<note_arr.length; k++){
+				//匹配每一条记录中的年月日
+				if(note_arr[k].year==year && note_arr[k].month==month+1 && note_arr[k].date==inner ){
+					$(this).data("cont",note_arr[k].note_cont)
+					$(this).addClass('ac');
+					$(this).click(function(){
+						alert($(this).data('cont'));
+					})
+				};
+			};
+		});
+	
+		
+		
+		$('#calendar h4').text(year+"年"+(month+1)+"月");	
+	};
+	
+	run(0);
+	
+	$('.a1').click(function(){
+		iNow--;
+		run(iNow);
+	
+	});
+	$('.a2').click(function(){
+		iNow++;
+		run(iNow);
+	});
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+});
+
+</script>
+</head>
+
+<body>
+<div id="calendar">
+       <h4>2013年10月</h4>
+       <a href="javascript:;" class="a1">上月</a>
+       <a href="javascript:;" class="a2">下月</a>
+    <ul class="week">
+    	<li>日</li>
+    	<li>一</li>
+    	<li>二</li>
+    	<li>三</li>
+    	<li>四</li>
+    	<li>五</li>
+    	<li>六</li>
+    	
+    </ul>
+    <ul class="dateList">
+    
+    
+    </ul>
+</div>
+</body>
+</html>
