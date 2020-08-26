@@ -11,11 +11,15 @@
 <meta name="description" content="简单但实用的导航"/>
 
 <!--网站favicon可以没有或者改为自己的-->
-<link rel="shortcut icon" type="image/x-icon" href="http://www.bituplink.com/wp-content/uploads/favicon.png"/>
+<!--<link rel="shortcut icon" type="image/x-icon" href="http://www.bituplink.com/wp-content/uploads/favicon.png"/>-->
 
 <!--CSS 若不需要变动样式不用改-->
+<link href="plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/zui/1.8.1/css/zui.min.css" rel="stylesheet" type="text/css"/>
 <link rel="stylesheet" type="text/css" href="css/common.css" />
+<link href="logo.ico" rel="shortcut icon" />
+<script src="plugin/jquery.min.js"></script>
+<script src="plugin/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body id="nav_body">
 <!--[if lt IE 10]>
@@ -24,27 +28,33 @@
     <strong>过时的</strong> 浏览器. 请更换一个更好的浏览器来提升用户体验.
 </div>
 <![endif]--><!--头部导航条-->
-<header>
-<div class="main">
-    <h1 class="logo">
-    <a href="goodweb.html">
-    <img src="http://www.bituplink.com/wp-content/uploads/favicon.png">
-    <span>bituplink导航</span>
-    </a>
-    </h1>
-    <!--顶部导航条-->
-    <nav class="nav">
-    <ul>
-        <li><a href="" target="_blank">bituplink官网</a></li>
-        <li><a href="" target="_blank">捐助</a></li>
-    </ul>
-    </nav>
-    <!--便携设备右上角菜单-->
-    <button class="nav-btn visible-xs visible-sm"><span class="icon-line top"></span><span class="icon-line middle"></span><span class="icon-line bottom"></span>
-    </button>
-</div>
-</header>
 <div id="content">
+    <div class="w_header">
+      <div class="container">
+        <div class="w_header_top">
+          <a href="#" class="w_logo"></a>
+          <span class="w_header_nav">
+          <ul>
+            <li><a href="" class="active">首页</a></li>
+            <li><a href="article.html">语音</a></li>
+            <li><a href="article.html">自然语言</a></li>
+            <li><a href="">机器学习</a></li>
+            <li><a href="">编程</a></li>
+            <li><a href="moodList.html">修养</a></li>
+            <li><a href="comment.html">行业资讯</a></li>
+            <li><a href="about.html">关于</a></li>
+          </ul>
+        </span>
+          <div class="w_search">
+            <div class="w_searchbox">
+              <input type="text" placeholder="search" />
+              <button>搜索</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!--左侧目录，导航跳转-->
     <div class="left-bar">
         <div class="header">
