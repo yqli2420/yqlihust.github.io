@@ -34,12 +34,6 @@
             <li><a href="about.html">关于</a></li>
           </ul>
         </span>
-          <div class="w_search">
-            <div class="w_searchbox">
-              <input type="text" placeholder="search" />
-              <button>搜索</button>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -171,7 +165,6 @@
 
           <!--左侧开始-->
           <div class="col-lg-3 col-md-3 w_main_right">
-
             <div class="panel panel-default sitetip">
               <a href="article_detail.html">
                 <strong>站点公告</strong>
@@ -186,7 +179,7 @@
               <tr>
                 <div class="footer">
                   <div class="addButton">
-                    <td><button type="button" id="today" onclick="initial()">今天</button></td>
+                    <td><button type="button" id="today" onclick="initial()">今天</button></td>&nbsp;&nbsp;
                     <td><a href="note.html"><button type="button" id="note">备注单</button></a></td>
                   </div>
                 </div>    
@@ -198,7 +191,7 @@
               <tr class="mainRow1">
                 <td>  <!-- 年份变化 -->
                   <div id="lastYear" onclick="pushBtm('YU')"> << </div>
-                </td>
+                </td>&nbsp;&nbsp;
                 <td>  <!-- 月份变化-->
                   <div id="lastMonth" onclick="pushBtm('MU')"> < </div>
                 </td>
@@ -376,14 +369,14 @@
                 </td>
                 <td>    <!-- 月份变化-->
                   <div id="nextMonth" onclick="pushBtm('MD')"> >  </div>
-                </td>
+                </td>&nbsp;&nbsp;
                 <td>  <!-- 年份变化-->
                   <div id="nextYear" onclick="pushBtm('YD')"> >> </div>
                 </td>
               </tr>
               <!-- 星期表头 -->
               <tr class="mainRow2">
-                <table class="week">
+                  <!--<table class="week">-->
                   <tr>
                     <td style="width: 14%;">日</td>
                     <td style="width: 14%;">一</td>
@@ -393,7 +386,7 @@
                     <td style="width: 14%;">五</td>
                     <td style="width: 14%;">六</td>
                   </tr>
-                </table>
+                  <!-- </table>-->
               </tr>
               <!-- 日期填充 -->
               <tr class="mainRow3">
