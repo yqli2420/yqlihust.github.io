@@ -8,7 +8,7 @@ h1.t_nav span{float:right; color:#999}
 /*.about{ width:75%;overflow: hidden; background: url(../img/slider/r_line.jpg) repeat-y right; line-height:22px; }*/
 .about h2{ font-size:22px; font-family: 'Architects Daughter', cursive; margin-bottom:20px}
 .about p{ margin-bottom:20px}
-.about_c,.about{margin:20px 0}
+.about_c,.about{margin:20px 0; text-indent:2em}
 .about ul{ width:90%}
 .about_c{ padding:10px 0 0 10px; color:#999; line-height:26px; }
 .about_c img{ margin:5px 0}
