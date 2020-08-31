@@ -7,13 +7,6 @@ html,body{
   -moz-box-sizing:border-box;
   -webkit-box-sizing: border-box;
 }
-a,a:hover{
-  text-decoration: none;
-  color: pink;
-}
-a:link{color:red;}
-a:visited{color:black;}
-a:active{color:#ccc;}
 /********************头部开始*********************/
 .w_header{
   height: 55px;
