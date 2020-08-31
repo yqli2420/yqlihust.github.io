@@ -9,8 +9,11 @@ html,body{
 }
 a,a:hover{
   text-decoration: none;
-  color: #333;
+  color: pink;
 }
+a:link{color:red;}
+a:visited{color:black;}
+a:active{color:#ccc;}
 /********************头部开始*********************/
 .w_header{
   height: 55px;
