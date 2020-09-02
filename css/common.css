@@ -747,6 +747,7 @@ input::-webkit-input-placeholder {
     margin-right: 5px;
     font-size: 18px;
 }
+.kge{ text-indent:2em}
 .card-link {
     display: block;
     padding: 10px 10px;
