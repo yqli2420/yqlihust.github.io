@@ -755,7 +755,7 @@ input::-webkit-input-placeholder {
     overflow: hidden;
     margin-bottom: 10px;
     background: #fff;
-    transition: all 0.2s ease-out;
+    #transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
  /* Firefox 4 */
     -webkit-transition: all 0.2s ease-out;
