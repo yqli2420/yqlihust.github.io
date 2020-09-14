@@ -824,13 +824,13 @@
             <h3> 2020 </h3>
             <table width="1100" border="1">
                         <tr>
-                            <td width="50" align="center">5</a></td>
+                            <td width="50" align="center">1</td>
                             <td width="50" align="center">B</td>
                             <td width="800">multiband melgan</td>
                             <td width="200"><a href="../pdf/tts_paper/multiband melgan.pdf">pdf</a></td>
                         </tr>
                         <tr>
-                            <td width="50" align="center">6</a></td>
+                            <td width="50" align="center">2</td>
                             <td width="50" align="center">B</td>
                             <td width="800">FeatherWave An efficient high fidelity neural vocoder with multiband linear prediction</td>
                             <td width="200"><a href="../pdf/tts_paper/FeatherWave An efficient high fidelity neural vocoder with multiband linear prediction.pdf">pdf</a></td>
@@ -849,7 +849,7 @@
             <h3> 2019 </h3>
             <table width="1100" border="1">
                         <tr>
-                            <td width="50" align="center">51/a></td>
+                            <td width="50" align="center">1</td>
                             <td width="50" align="center">B</td>
                             <td width="800">A Mandarin Prosodic Boundary Prediction Model Based on Multi Task Learning</td>
                             <td width="200"><a href="../pdf/tts_paper/A Mandarin Prosodic Boundary Prediction Model Based on Multi Task Learning.pdf">pdf</a></td>
@@ -924,93 +924,6 @@ $('.nav-btn').on('click', function () {
     $(this).toggleClass('animated2');
 });
 
-// 默认搜索引擎的内容，如果界面修改了需要同步修改
-var thisSearch = 'http://www.caup.cn/search?q=';
-
-$('#txt').keydown(function(ev){
-    // 回车键的处理
-    if(ev.keyCode==13){
-        window.open(thisSearch + $('#txt').val())
-        // $('#txt').val('');
-        $('#box ul').html('')
-    }
-})
-$(function(){
-  // 搜索引擎列表，样式一行五个内容，自动换行
-  var search = {
-    data: [{
-      name: '小众搜索',
-      url: 'http://www.caup.cn/search?q='
-  }, {
-      name: '百度',
-      url: 'https://www.baidu.com/s?wd='
-  }, {
-      name: '谷歌',
-      url: 'https://www.google.com/search?q='
-  }, {
-      name: '必应',
-      url: 'https://cn.bing.com/search?q='
-  }, {
-      name: '好搜',
-      url: 'https://www.so.com/s?q='
-  }, {
-      name: '搜狗',
-      url: 'https://www.sogou.com/web?query='
-  }, {
-      name: '淘宝',
-      url: 'https://s.taobao.com/search?q='
-  }, {
-      name: '京东',
-      url: 'http://search.jd.com/Search?keyword='
-  }, {
-      name: '天猫',
-      url: 'https://list.tmall.com/search_product.htm?q='
-  }, {
-      name: '1688',
-      url: 'https://s.1688.com/selloffer/offer_search.htm?keywords='
-  }, {
-      name: '知乎',
-      url: 'https://www.zhihu.com/search?type=content&q='
-  }, {
-      name: '微博',
-      url: 'https://s.weibo.com/weibo/'
-  }, {
-      name: 'Bilibili',
-      url: 'http://search.bilibili.com/all?keyword='
-  }, {
-      name: '豆瓣',
-      url: 'https://www.douban.com/search?source=suggest&q='
-  }, {
-      name: '优酷',
-      url: 'https://so.youku.com/search_video/q_'
-  }, {
-      name: 'GitHub',
-      url: 'https://github.com/search?q='
-  }]
-}
-for(var i = 0; i < search.data.length; i++){
-    var addList = '<li>' + search.data[i].name + '</li>'
-    $('.search-engine-list').append(addList);
-}
-$('.search-engine-name, .search-engine').hover(function() {
-    $('.search-engine').css('display', 'block')
-}, function() {
-    $('.search-engine').css('display', 'none')
-});
-$('.search-engine-list li').click(function() {
-    var _index = $(this).index();
-    var searchNameBtn = document.getElementById("search-engine-name");
-    searchNameBtn.innerHTML = search.data[_index].name;
-    thisSearch = search.data[_index].url;
-    $('.search-engine').css('display', 'none')
-})
-})
-$("#search-btn").click(function(){
-  var textValue = $('#txt').val();
-  if(textValue != ''){
-    window.open(thisSearch + textValue)
-}
-});
 </script>
 </div>
 </body>
