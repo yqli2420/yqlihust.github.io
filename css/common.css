@@ -92,10 +92,10 @@ html,body{
   color: #eee;
   font-size:14px;
   /*font-weight:bold;*/
-  text-transform:uppercase;
+  /*text-transform:uppercase;*/
   line-height: 10px;
   height: 10px;
-  width: 100px;
+  width: 120px;
   display: inline-block;
   text-align: center;
   font-family:"Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;
