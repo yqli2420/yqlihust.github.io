@@ -7,11 +7,11 @@
     totalPages: 9,//总页数
     liNums: 9,//分页的数字按钮数(建议取奇数)
     activeClass: 'active' ,//active类
-    firstPage: '首页',//首页按钮名称
+    firstPage: 'Home',//Home按钮名称
     lastPage: '末页',//末页按钮名称
     prv: '«',//前一页按钮名称
     next: '»',//后一页按钮名称
-    hasFirstPage: true,//是否有首页按钮
+    hasFirstPage: true,//是否有Home按钮
     hasLastPage: true,//是否有末页按钮
     hasPrv: true,//是否有前一页按钮
     hasNext: true,//是否有后一页按钮
