@@ -75,8 +75,8 @@
                     <table width="1100" border="1">
                         <tr>
                             <td width="50" align="center">1</td>
-                            <td width="50" align="center">free-mp3-converter-for-mac</td>
-                            <td width="800">各种视频转mp3</td>
+                            <td width="150" align="center">free-mp3-converter-for-mac</td>
+                            <td width="700">各种视频转mp3</td>
                             <td width="200"><a href=https://zh-cn.aiseesoft.com/downloads/mac/free-mp3-converter-for-mac.dmg"">pdf</a>
                             </td>
                         </tr>
@@ -94,11 +94,52 @@
 
                     <table width="1100" border="1">
                         <tr>
-                            <td width="50" align="center"></td>
-                            <td width="50" align="center"></td>
-                            <td width="800"></td>
-                            <td width="200"><a href="">web</a>
-                            </td>
+                            <td width="50" align="center">1</td>
+                            <td width="150" align="center">切音频</td>
+                            <td width="700">sox input.wav output.wav trim 194:25.0 0:15</td>
+                            <td width="200"><a href="">web</a></td>
+                        </tr>
+                        <tr>
+                            <td width="50" align="center">2</td>
+                            <td width="150" align="center">音频格式转换</td>
+                            <td width="700">sox -t raw -c 1 -e signed-integer -b 16 -r 16000 $1 $2</td>
+                            <td width="200"><a href="">web</a></td>
+                        </tr>
+                        <tr>
+                            <td width="50" align="center">3</td>
+                            <td width="150" align="center">计算均值</td>
+                            <td width="700"> cat mcpushlog2 | awk '{sum+=$1} END {print "avg=", sum/NR}'</td>
+                            <td width="200"><a href="">web</a></td>
+                        </tr>
+                        <tr>
+                            <td width="50" align="center">4</td>
+                            <td width="150" align="center">统计字符数量</td>
+                            <td width="700">sed -r 's/(.)/\1 /g' /etc/passwd | awk -F" " '{for (i=1;i<=NF;i++) {a[$i]++}} END {for (i in a) print i,a[i]}' | sort -n -k 2 -r'</td>
+                            <td width="200"><a href="">web</a></td>
+                        </tr>
+                        <tr>
+                            <td width="50" align="center">5</td>
+                            <td width="150" align="center">打印指定范围的列</td>
+                            <td width="700">awk -F " " '{for (i=2;i<=NF;i++)printf("%s ", $i);print ""}' test </td>
+                            <td width="200"><a href="">web</a></td>
+                        </tr>
+                        <tr>
+                            <td width="50" align="center">6</td>
+                            <td width="150" align="center">筛选列相同的行</td>
+                            <td width="700">awk 'NR==FNR{a[$2,$3];next} ($2,$3) in a' file1 file2</td>
+                            <td width="200"><a href="">web</a></td>
+                        </tr>
+                        <tr>
+                            <td width="50" align="center">7</td>
+                            <td width="150" align="center">根据一个文件筛选满足行</td>
+                            <td width="700">awk -F '\t' 'NR==FNR{a[$1];next} {if($1 in a) {print $0}}' test1 test2</td>
+                            <td width="200"><a href="">web</a></td>
+                        </tr>
+                        <tr>
+                            <td width="50" align="center">8</td>
+                            <td width="150" align="center">docker镜像</td>
+                            <td width="700"> docker build -f ./Dockerfile -t yqlitech/decoder:v3.0.1 .</td>
+                            <td width="200"><a href="">web</a></td>
                         </tr>
                     </table>
                     </table>
