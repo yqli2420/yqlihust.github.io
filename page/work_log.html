@@ -55,7 +55,7 @@
         <ul class="scrollcontent">
             <!--左侧Director，按照需要修改和添加，参考已有的修改名称和href-->
             <li><a href="#row-1">Tools</a></li>
-            <li><a href="#row-2">Log</a></li>
+            <li><a href="#row-2">Cmds</a></li>
         </ul>
     </div>
 </div>
@@ -73,13 +73,31 @@
 
                     <h3> Tools </h3>
                     <table width="1100" border="1">
-                        <tr>
-                            <td width="50" align="center">1</td>
-                            <td width="150" align="center">free-mp3-converter-for-mac</td>
-                            <td width="700">各种视频转mp3</td>
-                            <td width="200"><a href="https://zh-cn.aiseesoft.com/downloads/mac/free-mp3-converter-for-mac.dmg">web</a>
+                        <tr>
+
+                            <td width="50" align="center">1</td>
+
+                            <td width="150" align="center">free-mp3-converter-for-mac</td>
+
+                            <td width="700">各种视频转mp3</td>
+
+                            <td width="200"><a href="https://zh-cn.aiseesoft.com/downloads/mac/free-mp3-converter-for-mac.dmg">web</a>
+
                             </td>
-                        </tr>
+                        </tr>
+                        <tr>
+                            <td width="50" align="center">2</td>
+                            <td width="150" align="center">cpolar</td>
+                            <td width="700">网络穿刺</td>
+                            <td width="200"><a href="https://dashboard.cpolar.com/status">web</a></td>
+                        </tr>
+                        <tr>
+                            <td width="50" align="center">3</td>
+                            <td width="150" align="center">convertmodel</td>
+                            <td width="700">各类神经网络转换</td>
+                            <td width="200"><a href="https://convertmodel.com/">web</a></td>
+                        </tr>
+
                     </table>
                 </div>
             </div>
@@ -88,59 +106,99 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="item-tit">
-                        <strong>Log </strong>
+                        <strong>Cmds</strong>
                     </div>
                     <!--获取内容列表-->
 
                     <table width="1100" border="1">
-                        <tr>
-                            <td width="50" align="center">1</td>
-                            <td width="150" align="center">切音频</td>
-                            <td width="700">sox input.wav output.wav trim 194:25.0 0:15</td>
+                        <tr>
+
+                            <td width="50" align="center">1</td>
+
+                            <td width="150" align="center">切音频</td>
+
+                            <td width="700">sox input.wav output.wav trim 194:25.0 0:15</td>
+
                             <td width="200"><a href="">web</a></td>
-                        </tr>
-                        <tr>
-                            <td width="50" align="center">2</td>
-                            <td width="150" align="center">音频格式转换</td>
-                            <td width="700">sox -t raw -c 1 -e signed-integer -b 16 -r 16000 $1 $2</td>
+                        </tr>
+
+                        <tr>
+
+                            <td width="50" align="center">2</td>
+
+                            <td width="150" align="center">音频格式转换</td>
+
+                            <td width="700">sox -t raw -c 1 -e signed-integer -b 16 -r 16000 $1 $2</td>
+
                             <td width="200"><a href="">web</a></td>
-                        </tr>
-                        <tr>
-                            <td width="50" align="center">3</td>
-                            <td width="150" align="center">计算均值</td>
-                            <td width="700"> cat mcpushlog2 | awk '{sum+=$1} END {print "avg=", sum/NR}'</td>
+                        </tr>
+
+                        <tr>
+
+                            <td width="50" align="center">3</td>
+
+                            <td width="150" align="center">计算均值</td>
+
+                            <td width="700"> cat mcpushlog2 | awk '{sum+=$1} END {print "avg=", sum/NR}'</td>
+
                             <td width="200"><a href="">web</a></td>
-                        </tr>
-                        <tr>
-                            <td width="50" align="center">4</td>
-                            <td width="150" align="center">统计字符数量</td>
-                            <td width="700">sed -r 's/(.)/\1 /g' /etc/passwd | awk -F" " '{for (i=1;i<=NF;i++) {a[$i]++}} END {for (i in a) print i,a[i]}' | sort -n -k 2 -r'</td>
+                        </tr>
+
+                        <tr>
+
+                            <td width="50" align="center">4</td>
+
+                            <td width="150" align="center">统计字符数量</td>
+
+                            <td width="700">sed -r 's/(.)/\1 /g' /etc/passwd | awk -F" " '{for (i=1;i<=NF;i++) {a[$i]++}} END {for (i in a) print i,a[i]}' | sort -n -k 2 -r'</td>
+
                             <td width="200"><a href="">web</a></td>
-                        </tr>
-                        <tr>
-                            <td width="50" align="center">5</td>
-                            <td width="150" align="center">打印指定范围的列</td>
-                            <td width="700">awk -F " " '{for (i=2;i<=NF;i++)printf("%s ", $i);print ""}' test </td>
+                        </tr>
+
+                        <tr>
+
+                            <td width="50" align="center">5</td>
+
+                            <td width="150" align="center">打印指定范围的列</td>
+
+                            <td width="700">awk -F " " '{for (i=2;i<=NF;i++)printf("%s ", $i);print ""}' test </td>
+
                             <td width="200"><a href="">web</a></td>
-                        </tr>
-                        <tr>
-                            <td width="50" align="center">6</td>
-                            <td width="150" align="center">筛选列相同的行</td>
-                            <td width="700">awk 'NR==FNR{a[$2,$3];next} ($2,$3) in a' file1 file2</td>
+                        </tr>
+
+                        <tr>
+
+                            <td width="50" align="center">6</td>
+
+                            <td width="150" align="center">筛选列相同的行</td>
+
+                            <td width="700">awk 'NR==FNR{a[$2,$3];next} ($2,$3) in a' file1 file2</td>
+
                             <td width="200"><a href="">web</a></td>
-                        </tr>
-                        <tr>
-                            <td width="50" align="center">7</td>
-                            <td width="150" align="center">根据一个文件筛选满足行</td>
-                            <td width="700">awk -F '\t' 'NR==FNR{a[$1];next} {if($1 in a) {print $0}}' test1 test2</td>
+                        </tr>
+
+                        <tr>
+
+                            <td width="50" align="center">7</td>
+
+                            <td width="150" align="center">根据一个文件筛选满足行</td>
+
+                            <td width="700">awk -F '\t' 'NR==FNR{a[$1];next} {if($1 in a) {print $0}}' test1 test2</td>
+
                             <td width="200"><a href="">web</a></td>
-                        </tr>
-                        <tr>
-                            <td width="50" align="center">8</td>
-                            <td width="150" align="center">docker镜像</td>
-                            <td width="700"> docker build -f ./Dockerfile -t yqlitech/decoder:v3.0.1 .</td>
+                        </tr>
+
+                        <tr>
+
+                            <td width="50" align="center">8</td>
+
+                            <td width="150" align="center">docker镜像</td>
+
+                            <td width="700"> docker build -f ./Dockerfile -t yqlitech/decoder:v3.0.1 .</td>
+
                             <td width="200"><a href="">web</a></td>
-                        </tr>
+                        </tr>
+
                     </table>
                     </table>
                     </table>
